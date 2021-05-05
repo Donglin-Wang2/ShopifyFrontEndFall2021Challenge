@@ -18,7 +18,7 @@ function App() {
     const fetchFilms = async () => {
         if (query) {
             const result = await axios.get(
-                `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`
+                `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=movie`
             );
             console.log(result.data);
             if (!result.data.Error) {
@@ -47,7 +47,8 @@ function App() {
                 <div></div>
             )}
             <div className="container">
-                <h1 className="title is-1 mt-4">Movie Nominator 🏆</h1>
+                <h1 className="title is-1 mt-4">The Shoppies 🏆</h1>
+                <h5 className="title is-5">Nominate the best movies you've seen!</h5>
                 <div className="searchbar mb-4">
                     <input
                         className="input is-large"
