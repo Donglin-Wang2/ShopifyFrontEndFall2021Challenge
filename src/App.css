@@ -4,17 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin-top: 50px;
-}
-
-/* .column {
-  padding: 0;
-} */
-/* .column:not(:last-child) {
-  margin-right: 12px;
-} */
-
 .result-card {
     width: 100%;
     display: flex;
@@ -53,4 +42,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.notification {
+    position: sticky;
+    top: 0;
+    z-index: 5000;
 }
