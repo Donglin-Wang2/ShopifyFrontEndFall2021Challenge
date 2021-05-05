@@ -18,7 +18,7 @@ function App() {
     const fetchFilms = async () => {
         if (query) {
             const result = await axios.get(
-                `http://www.omdbapi.com/?apikey=${apiKey}&s=${query}`
+                `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`
             );
             console.log(result.data);
             if (!result.data.Error) {
